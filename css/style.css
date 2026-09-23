@@ -1,0 +1,841 @@
+/* ---------- Accessibility ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Avenir Next @font-face ---------- */
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../assets/fonts/AvenirNext-Bold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../assets/fonts/AvenirNext-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next Condensed";
+  src: url("../assets/fonts/AvenirNextCondensed-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Variables / Theme ---------- */
+:root {
+  --bg: #000000;
+  --bg-alt: #111111;
+  --text: rgba(255, 255, 255, 1);
+  --text-muted: rgba(255, 255, 255, 0.45);
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #ffffff;
+
+  --font: "Avenir Next", "Avenir", Helvetica, Arial, sans-serif;
+  --font-condensed: "Avenir Next Condensed", "Avenir Next", "Avenir", Helvetica, Arial, sans-serif;
+  --weight-black: 900;
+  --weight-book: 500;
+
+  --max-width: 1440px;
+  --nav-h: 52px;
+}
+
+/* Light theme removed — dark only */
+
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-weight: var(--weight-book);
+  line-height: 1.5;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+img, video { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ---------- Header / Nav ---------- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 2rem;
+  height: var(--nav-h);
+  background: transparent;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-right { justify-content: flex-end; }
+
+.nav-link {
+  font-size: 0.85rem;
+  font-weight: var(--weight-black);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  line-height: 1.2;
+  height: 1.2em;
+}
+.nav-link.active { color: var(--text); }
+
+/* Single-step roll: the label rolls up one line on hover and back down on leave.
+   The return is slower and softer so it does not read as a rewind. */
+.nav-link__inner {
+  --nav-roll-up-duration: 0.34s;
+  --nav-roll-up-ease: cubic-bezier(0.2, 0.75, 0.2, 1);
+  --nav-roll-down-duration: 0.46s;
+  --nav-roll-down-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  display: block;
+  transform: translateY(0);
+  transition: transform var(--nav-roll-down-duration) var(--nav-roll-down-ease);
+}
+.nav-link__text {
+  display: block;
+  height: 1.2em;
+  line-height: 1.2;
+}
+.nav-link:hover .nav-link__inner,
+.nav-link:focus-visible .nav-link__inner {
+  transform: translateY(-1.2em);
+  transition: transform var(--nav-roll-up-duration) var(--nav-roll-up-ease);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-link__inner,
+  .nav-link:hover .nav-link__inner,
+  .nav-link:focus-visible .nav-link__inner { transition: none; }
+}
+
+/* ---------- Mobile nav: hamburger + full-screen panel ---------- */
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+.nav-toggle-bar {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.nav-toggle-bar:nth-child(1) { transform: translateY(-6px); }
+.nav-toggle-bar:nth-child(3) { transform: translateY(6px); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) { transform: translateY(0) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) { transform: translateY(0) rotate(-45deg); }
+
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.28s ease;
+}
+.mobile-nav.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-nav-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+  font-size: clamp(1.6rem, 7vw, 2.4rem);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+.mobile-nav-link.active,
+.mobile-nav-link:hover { color: var(--text); }
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-nav, .nav-toggle-bar { transition: none; }
+}
+
+@media (max-width: 700px) {
+  /* Home stays in the bar next to the toggle; Games/Film/Commercial move into the panel. */
+  .nav-left .nav-link:not(:first-child) { display: none; }
+  .nav-right .nav-link { display: none; }
+  .nav-toggle { display: inline-flex; }
+}
+
+body.nav-open { overflow: hidden; }
+
+/* Theme toggle removed */
+
+/* ---------- Hero entrance animation ---------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-content h1              { animation: fadeUp 0.55s ease both; }
+  .hero-content .hero-subtitles { animation: fadeUp 0.55s 0.18s ease both; }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: calc(var(--nav-h) + 5rem) 2rem 6rem;
+  background: var(--bg);
+}
+.hero-content {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+.hero-content h1 {
+  font-size: clamp(2.6rem, 8.6vw, 7.5rem);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  /* Tracking positivo: el hueco que deja tras el último carácter ya separa la
+     "A" final del borde, así que no lleva padding-right compensatorio. */
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+  margin-bottom: 1.8rem;
+  color: rgba(255,255,255,0.85);
+  white-space: nowrap;
+}
+/* Ajuste óptico: la "A" final necesita algo más de aire que el resto para no
+   parecer pegada a la "C". Solo el hueco previo — el posterior ya lo da el
+   letter-spacing del h1. */
+.hero-name-last { margin-left: 0.06em; }
+.hero-subtitles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.hero-sub-left,
+.hero-sub-right {
+  font-size: clamp(0.6rem, 1.1vw, 0.75rem);
+  font-weight: var(--weight-book);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+  max-width: 28ch;
+  line-height: 1.4;
+}
+.hero-sub-left {
+  margin-left: 0.95em;
+}
+.hero-sub-right {
+  text-align: right;
+  margin-right: -0.12em;
+  max-width: none;
+}
+
+/* ---------- Grid sections ---------- */
+.grid-section {
+  padding-top: var(--nav-h);
+  padding-bottom: 6rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.projects-grid--demos {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project cells */
+.project-cell {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Video wrapper — clips the scale transform */
+.project-video-wrap {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--bg-alt);
+}
+.project-video-wrap video,
+.project-video-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.project-cell:hover .project-video-wrap video,
+.project-cell:hover .project-video-wrap img {
+  transform: scale(1.03);
+}
+
+/* Title strip */
+.project-strip {
+  background: #1c1c1c;
+  padding: 0.7rem 0.75rem 1rem;
+  transition: background 0.22s ease;
+}
+.project-cell:hover .project-strip {
+  background: #2e2e2e;
+}
+
+.project-strip .project-title {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+/* ---------- Home: service icons row ---------- */
+.skills-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 5rem 2rem 6rem;
+}
+.skills-title {
+  font-size: 0.65rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.skills-row {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 2rem;
+  /* Ancho de 5 ítems (5 x 7.5rem + 4 x 2rem): fuerza un 5 + 5 limpio en vez de
+     un 8 + 2 con dos huérfanos. Por debajo, envuelve solo. */
+  max-width: 45.5rem;
+  margin: 0 auto;
+  padding: 0;
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 7.5rem;
+  text-align: center;
+}
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  /* Los PNG de origen son línea blanca sobre transparente: bajamos la opacidad
+     para alinearlos con el resto del texto del sitio. */
+  opacity: 0.85;
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+.skill-item:hover .skill-icon {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.skill-label {
+  font-size: 0.55rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  color: var(--text-muted);
+  transition: color 0.22s ease;
+}
+.skill-item:hover .skill-label { color: rgba(255,255,255,0.85); }
+@media (prefers-reduced-motion: reduce) {
+  .skill-icon,
+  .skill-label { transition: none; }
+  .skill-item:hover .skill-icon { transform: none; }
+}
+
+/* ---------- About page ---------- */
+.about-manifesto-section {
+  padding: calc(var(--nav-h) + 5rem) 2rem 5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.about-manifesto {
+  font-size: clamp(2rem, 5.5vw, 5.2rem);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+.manifesto-text { display: inline; }
+.manifesto-img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.2em;
+  aspect-ratio: 4 / 3;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 0.15em;
+}
+.manifesto-video {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.2em;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  /* El hueco a ambos lados lo da solo este margen: las partes de texto no
+     llevan espacio propio, así que izquierda y derecha quedan idénticas. */
+  margin: 0 0.25em;
+}
+.manifesto-video video {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.manifesto-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-bio-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem 7rem;
+  display: grid;
+  grid-template-columns: clamp(260px, 36%, 400px) 1fr;
+  gap: 5rem;
+  align-items: stretch;
+}
+.about-photo-col { display: flex; flex-direction: column; align-items: flex-start; }
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--bg-alt);
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.about-photo img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.about-photo-name {
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.15rem;
+  color: rgba(255,255,255,0.85);
+}
+.about-photo-role {
+  font-size: 0.6rem;
+  font-weight: var(--weight-book);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text);
+}
+.about-location {
+  font-size: 0.65rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+.about-text p { color: var(--text); margin-bottom: 1.5rem; font-size: 0.95rem; text-align: justify; }
+.about-facts { display: flex; flex-direction: column; gap: 0.6rem; }
+.about-facts li {
+  font-size: 0.8rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-left: 1rem;
+  border-left: 2px solid var(--text);
+  color: var(--text);
+}
+
+/* ---------- Contact / Let's Talk page ---------- */
+.contact-section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: calc(var(--nav-h) + 5rem) 2rem 7rem;
+  text-align: center;
+}
+.contact-label {
+  font-size: 0.65rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+.contact-email-link {
+  display: block;
+  font-size: clamp(1.1rem, 2.8vw, 2rem);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+.contact-email-link:hover { opacity: 0.6; }
+.contact-studio-photo {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--bg-alt);
+  margin-bottom: 3rem;
+}
+.contact-studio-photo img { width: 100%; height: 100%; object-fit: cover; }
+.contact-address {
+  font-size: clamp(1rem, 2.2vw, 1.6rem);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+/* ---------- Project detail page ---------- */
+.project-detail {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: calc(var(--nav-h) + 3rem) 2rem 7rem;
+}
+
+.project-hero-title {
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project-detail-player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  margin-bottom: 3rem;
+}
+.project-detail-player iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Metadata table */
+/* Fixed 50/50 columns so the label|value seam lands on the page's centre line,
+   vertically aligned with the centred Overview heading below. */
+.project-meta-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+.project-meta-table th,
+.project-meta-table td { width: 50%; }
+.project-meta-table th,
+.project-meta-table td {
+  padding: 0.45rem 1.2rem 0.45rem 1.2rem;
+  vertical-align: top;
+  font-size: 1rem;
+}
+.project-meta-table th {
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text);
+  white-space: nowrap;
+  text-align: right;
+}
+.project-meta-table td {
+  font-weight: var(--weight-book);
+  text-align: left;
+  color: var(--text);
+}
+
+.project-overview-heading {
+  font-size: 1rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+.project-detail-description {
+  font-size: 0.95rem;
+  color: var(--text);
+  max-width: 600px;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ---------- Project prev / next nav ---------- */
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  padding: 0 4rem;
+}
+.project-nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+.project-nav-link:hover { color: var(--text); }
+
+/* ---------- About — CV downloads + socials ---------- */
+.about-downloads {
+  display: flex;
+  align-items: center;
+  gap: 1rem 2rem;
+  margin-top: 0;
+  padding-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.about-social-link {
+  display: block;
+  line-height: 0;
+  /* Mismo par de valores que --text-muted / --text: el círculo (currentColor
+     en el SVG) se apaga y se ilumina igual que el texto de al lado. El glifo
+     interior es #000000 fijo, igual que --bg, así queda recortado sobre el
+     círculo sea cual sea su color. */
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+.about-social-link svg { display: block; width: 22px; height: 22px; transform-origin: center; }
+.about-social-link:hover { color: var(--text); }
+.about-social-link:hover svg { animation: about-social-bounce 0.3s ease-out; }
+@keyframes about-social-bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-social-link:hover svg { animation: none; }
+}
+.about-download-link {
+  font-size: 0.8rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.15em;
+  transition: color 0.15s, border-color 0.15s;
+}
+.about-download-link:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+/* ---------- Contact — Google Maps ---------- */
+.contact-map {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 380px;
+}
+
+/* ---------- Footer ---------- */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  font-size: 0.8rem;
+  font-weight: var(--weight-book);
+  color: var(--text);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.footer-bottom a { color: var(--text-muted); transition: color 0.15s; }
+.footer-bottom a:hover { color: var(--text); }
+.footer-credit { font-size: 0.8rem; text-align: right; }
+.footer-credit a { color: var(--text-muted); }
+.footer-credit a:hover { color: var(--text); }
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Stagger children inside grids */
+.projects-grid .project-cell.reveal { transition-delay: calc(var(--reveal-i, 0) * 60ms); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  /* Tres tiles de categoría: a 2 columnas quedaría uno huérfano, así que
+     aguantan en fila hasta el breakpoint móvil. */
+  .projects-grid--categories { grid-template-columns: repeat(3, 1fr); }
+  .about-bio-section { grid-template-columns: 1fr; }
+  .about-photo-col { max-width: 260px; }
+}
+
+@media (max-width: 600px) {
+  .site-header { padding: 0 1.2rem; }
+  .nav-left, .nav-right { gap: 1rem; }
+  .hero { padding: calc(var(--nav-h) + 3rem) 1.2rem 4.5rem; }
+  /* Bloque centrado con aire simétrico. En desktop sigue siendo max-content
+     con los subtítulos a los lados; esto es solo del breakpoint móvil. */
+  .hero-content {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-content h1 {
+    white-space: normal; /* safety net: wrap instead of overflow, never triggers today */
+    margin-left: 0;      /* el ajuste óptico de desktop descentraría el bloque */
+    padding-right: 0;
+  }
+  /* Subtítulos apilados, ambos con el mismo criterio de alineación. */
+  .hero-subtitles {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+  }
+  .hero-sub-left,
+  .hero-sub-right {
+    text-align: center;
+    max-width: 30ch;
+    margin-right: 0;
+  }
+  .projects-grid,
+  .projects-grid--categories { grid-template-columns: 1fr; }
+  .skills-section { padding: 3.5rem 1rem 4.5rem; }
+  /* En móvil pasa a grid: con flex y anchos fijos no caben 5 a 375px y caía en
+     3+3+3+1. Cinco columnas fluidas garantizan el 5 + 5 exacto. */
+  .skills-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.75rem 0.4rem;
+    max-width: none;
+  }
+  .skill-item { width: auto; gap: 0.5rem; }
+  .skill-icon { width: 30px; height: 30px; }
+  .skill-label {
+    font-size: 0.5rem;
+    letter-spacing: 0.04em;
+    overflow-wrap: anywhere;
+  }
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.6rem;
+    text-align: center;
+    padding: 1.5rem 1.2rem;
+  }
+  .footer-credit { text-align: center; }
+  .about-manifesto-section { padding: calc(var(--nav-h) + 3rem) 1.2rem 3rem; }
+  .about-bio-section { padding: 0 1.2rem 4rem; }
+  .contact-section { padding: calc(var(--nav-h) + 3rem) 1.2rem 4rem; }
+  .project-detail { padding: calc(var(--nav-h) + 2rem) 1.2rem 4rem; }
+  .grid-section { padding-bottom: 4.5rem; }
+}

@@ -1,0 +1,73 @@
+{
+  "en": {
+    "nav.home": "Home",
+    "nav.games": "Games",
+    "nav.film": "Film",
+    "nav.commercial": "Commercial",
+    "nav.about": "About",
+    "nav.letsTalk": "Let's Talk",
+
+    "hero.left": "Senior Sound Designer & Audio Implementer",
+    "hero.right": "Creating immersive audio<br>for audiovisual experiences",
+
+    "skills.title": "What I do",
+    "skills.soundDesign":    "Sound Design",
+    "skills.gameAudio":      "Game Audio",
+    "skills.postProduction": "Post-Production",
+    "skills.studioRec":      "Studio Rec",
+    "skills.fieldRec":       "Field Rec",
+    "skills.foley":          "Foley",
+    "skills.voiceover":      "Voiceover",
+    "skills.music":          "Music",
+    "skills.mixing":         "Mixing",
+    "skills.remoteRec":      "Remote Rec",
+
+    "about.manifestoPart1": "I believe thoughtful sound design",
+    "about.manifestoPart2": "is what transforms great ideas into truly immersive experiences.",
+    "about.role": "Senior Sound Designer & Audio Implementer",
+    "about.location": "Madrid, Spain",
+    "about.bio1": "I'm Nacho Roca, a Senior Sound Designer and Foley Artist with over 10 years of experience creating immersive audio for video games, film, documentaries, and international advertising campaigns. Throughout my career, I've had the opportunity to work on everything from AAA productions and indie games to projects for globally recognized brands, always adapting my approach to the unique creative vision of each production.",
+    "about.bio2": "My work combines sound design, foley, field recording, editing, mixing, and audio implementation to craft distinctive sonic identities that enhance storytelling, strengthen gameplay, and elevate the emotional impact of every experience. Whether building believable worlds for interactive media or designing cinematic audio for film and commercial productions, I believe every project deserves a thoughtful and carefully crafted soundscape that leaves a lasting impression.",
+    "about.bio3": "I run my own sound studio, where I work directly with clients and collaborate with a wider network of creatives and audio professionals. This allows me to adapt to projects of different scales and production needs while bringing together the right people and resources for each project.",
+    "about.fact1": "10 years of professional experience",
+    "about.fact2": "Specialized in video games, TV and film",
+    "about.fact3": "Immersive soundscapes & interactive audio",
+
+    "videogames.title": "Games",
+    "film.title": "Film",
+    "commercial.title": "Commercial",
+    "demos.title": "Demos",
+
+    "contact.title": "Let's Talk",
+    "contact.sendEmail": "Send an email",
+    "contact.droppedBy": "Drop by",
+    "contact.address": "Calle Antonio de Cabezón 83<br>Madrid, Spain",
+    "contact.downloadCv": "Download CV | Games",
+    "contact.downloadLetter": "Download CV | Media",
+
+    "project.labelProject": "Project",
+    "project.labelRole": "Role",
+    "project.labelDeveloper": "Developer",
+    "project.labelGenre": "Genre",
+    "project.labelYear": "Year",
+    "project.labelDirector": "Director",
+    "project.labelClient": "Client",
+    "project.labelAgency": "Agency",
+    "project.labelProduction": "Production",
+    "project.overview": "Overview",
+
+    "footer.privacy": "Privacy Policy",
+    "footer.credit": "Developed by",
+
+    "meta.siteTitle": "Nacho Roca — Senior Sound Designer",
+    "meta.siteDescription": "Nacho Roca is a Senior Sound Designer with 10 years of experience crafting immersive sound for video games, advertising and film.",
+    "meta.ogDescription": "10 years crafting immersive soundscapes for video games, advertising and film.",
+
+    "meta.homeDescription": "Nacho Roca is a Senior Sound Designer and Foley Artist with 10 years of experience in immersive audio for AAA games, indie titles, film and global campaigns.",
+    "meta.gamesDescription": "Explore Nacho Roca's game sound design work — from AAA titles like Lords of the Fallen to indie projects. Custom foley, synthesis, and audio implementation.",
+    "meta.filmDescription": "Nacho Roca's sound design for short films, feature films and dance films — festival-selected work built on foley, field recording and detailed mixing.",
+    "meta.commercialDescription": "Nacho Roca's audio work for advertising — campaigns for brands like TOUS, C. Tangana, Ford, Nissan and Pepe Jeans, crafted with a cinematic ear and creative precision.",
+    "meta.aboutDescription": "Senior Sound Designer and Foley Artist based in Madrid. 10+ years crafting immersive soundscapes for games, film, documentaries and international ad campaigns.",
+    "meta.contactDescription": "Hire Nacho Roca for your next project. Sound design, foley, mixing, and audio implementation for games, film, and advertising. Based in Madrid, Spain."
+  }
+}

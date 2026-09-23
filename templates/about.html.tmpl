@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{META_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <link rel="alternate" hreflang="en" href="{{HREFLANG_EN}}">
+  <link rel="alternate" hreflang="x-default" href="{{HREFLANG_EN}}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{META_TITLE}}">
+  <meta property="og:description" content="{{OG_DESCRIPTION}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+
+  <link rel="icon" href="{{ROOT}}favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="{{ROOT}}favicon.svg">
+  <link rel="apple-touch-icon" href="{{ROOT}}apple-touch-icon.png">
+  <link rel="manifest" href="{{ROOT}}site.webmanifest">
+  <link rel="stylesheet" href="{{ROOT}}css/style.css">
+  <link rel="preload" href="{{ROOT}}assets/fonts/AvenirNextCondensed-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ROOT}}assets/fonts/AvenirNext-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-left">
+      <a href="{{HOME_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_HOME}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_HOME}}</span></span></a>
+      <a href="{{GAMES_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_GAMES}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_GAMES}}</span></span></a>
+      <a href="{{FILM_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_FILM}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_FILM}}</span></span></a>
+      <a href="{{COMMERCIAL_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_COMMERCIAL}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_COMMERCIAL}}</span></span></a>
+    </nav>
+    <nav class="nav-right">
+      <a href="{{ABOUT_URL}}" class="nav-link active"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_ABOUT}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_ABOUT}}</span></span></a>
+      <a href="{{CONTACT_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_LETS_TALK}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_LETS_TALK}}</span></span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+    <nav class="mobile-nav-links">
+      <a href="{{GAMES_URL}}" class="mobile-nav-link{{M_GAMES_ACTIVE}}">{{NAV_GAMES}}</a>
+      <a href="{{FILM_URL}}" class="mobile-nav-link{{M_FILM_ACTIVE}}">{{NAV_FILM}}</a>
+      <a href="{{COMMERCIAL_URL}}" class="mobile-nav-link{{M_COMMERCIAL_ACTIVE}}">{{NAV_COMMERCIAL}}</a>
+      <a href="{{ABOUT_URL}}" class="mobile-nav-link{{M_ABOUT_ACTIVE}}">{{NAV_ABOUT}}</a>
+      <a href="{{CONTACT_URL}}" class="mobile-nav-link{{M_CONTACT_ACTIVE}}">{{NAV_LETS_TALK}}</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- MANIFESTO -->
+    <section class="about-manifesto-section">
+      <h1 class="about-manifesto"><!--
+        --><span class="manifesto-text">{{ABOUT_MANIFESTO_PART1}}</span><!--
+        --><span class="manifesto-video" aria-hidden="true"><video src="{{ROOT}}assets/video/canva-texto.mp4" autoplay muted loop playsinline preload="none"></video></span><!--
+        --><span class="manifesto-text">{{ABOUT_MANIFESTO_PART2}}</span><!--
+      --></h1>
+    </section>
+
+    <!-- BIO -->
+    <section class="about-bio-section reveal">
+      <div class="about-photo-col">
+        <div class="about-photo">
+          <img src="{{ROOT}}assets/img/fotohero.webp" alt="Nacho Roca">
+        </div>
+        <p class="about-photo-name">Nacho Roca</p>
+        <p class="about-photo-role">{{ABOUT_ROLE}}</p>
+      </div>
+      <div class="about-text">
+        <p class="about-location">{{ABOUT_LOCATION}}</p>
+        <p>{{ABOUT_BIO1}}</p>
+        <p>{{ABOUT_BIO2}}</p>
+        <p>{{ABOUT_BIO3}}</p>
+        <div class="about-downloads">
+          <!-- href con slug (URL robusta, sin espacios ni &); download conserva
+               el nombre "bonito" en el fichero que se descarga. -->
+          <a href="{{ROOT}}assets/docs/cv-games.pdf" download="CV &amp; RL Nacho Roca - Sound designer (Games).pdf" target="_blank" rel="noopener" class="about-download-link">{{ABOUT_CV_LABEL}}</a>
+          <a href="{{ROOT}}assets/docs/cv-media.pdf" download="CV Nacho Roca - Sound designer (Media).pdf" target="_blank" rel="noopener" class="about-download-link">{{ABOUT_LETTER_LABEL}}</a>
+          <a href="https://www.linkedin.com/in/whoisnachoroca/" target="_blank" rel="noopener" class="about-social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 512 512" width="22" height="22" aria-hidden="true"><!--
+              --><circle cx="256" cy="256" r="256" fill="currentColor"/><!--
+              --><path d="M0,0 L13,0 L24,3 L32,9 L38,16 L42,29 L42,36 L38,49 L30,58 L20,63 L11,65 L1,65 L-10,62 L-19,56 L-25,48 L-28,40 L-28,25 L-24,15 L-17,7 L-5,1 Z " fill="#000000" transform="translate(144,109)"/><!--
+              --><path d="M0,0 L18,0 L33,3 L49,11 L58,18 L65,26 L73,40 L78,56 L80,68 L80,192 L18,192 L17,81 L14,69 L9,59 L3,54 L-4,51 L-9,50 L-18,50 L-28,53 L-34,57 L-39,62 L-45,72 L-47,85 L-48,192 L-110,192 L-110,4 L-48,4 L-47,29 L-38,18 L-30,11 L-19,5 L-7,1 Z " fill="#000000" transform="translate(326,195)"/><!--
+              --><path d="M0,0 L61,0 L62,1 L62,188 L-1,188 L-1,1 Z " fill="#000000" transform="translate(120,199)"/><!--
+            --></svg>
+          </a>
+          <a href="https://vimeo.com/nachoroca" target="_blank" rel="noopener" class="about-social-link" aria-label="Vimeo">
+            <svg viewBox="0 0 512 512" width="22" height="22" aria-hidden="true"><!--
+              --><circle cx="256" cy="256" r="256" fill="currentColor"/><!--
+              --><path d="M0,0 L14,0 L27,2 L38,6 L46,12 L51,17 L57,26 L61,37 L64,52 L64,79 L60,98 L53,118 L42,141 L30,162 L14,186 L1,204 L-9,217 L-20,231 L-31,244 L-42,256 L-49,264 L-62,277 L-73,286 L-83,294 L-99,304 L-115,311 L-130,314 L-139,314 L-149,311 L-159,305 L-166,298 L-175,285 L-184,268 L-190,252 L-218,149 L-225,127 L-231,112 L-237,101 L-244,93 L-248,91 L-256,91 L-271,100 L-280,106 L-284,104 L-293,92 L-298,85 L-294,80 L-286,73 L-272,61 L-257,47 L-249,40 L-235,28 L-217,15 L-202,7 L-195,5 L-178,5 L-167,9 L-158,16 L-150,27 L-144,41 L-140,57 L-129,123 L-122,156 L-116,177 L-108,194 L-101,200 L-95,200 L-86,194 L-78,185 L-66,168 L-52,144 L-45,129 L-41,117 L-40,110 L-40,99 L-43,89 L-45,85 L-50,83 L-55,81 L-66,80 L-79,82 L-90,85 L-88,76 L-82,61 L-73,44 L-64,32 L-59,26 L-51,19 L-37,10 L-23,4 L-9,1 Z " fill="#000000" transform="translate(373,99)"/><!--
+            --></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <span>&copy; <span id="footer-year"></span> Nacho Roca</span>
+      <a href="{{PRIVACY_URL}}">{{FOOTER_PRIVACY}}</a>
+      <span class="footer-credit">{{FOOTER_CREDIT}} <a href="https://www.instagram.com/daigoro_battosai/" target="_blank" rel="noopener">@daigoro_battosai</a></span>
+    </div>
+  </footer>
+
+  <script src="{{ROOT}}js/main.js"></script>
+</body>
+</html>

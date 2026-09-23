@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <circle cx="256" cy="256" r="256" fill="currentColor"/>
+  <path d="M0,0 L13,0 L24,3 L32,9 L38,16 L42,29 L42,36 L38,49 L30,58 L20,63 L11,65 L1,65 L-10,62 L-19,56 L-25,48 L-28,40 L-28,25 L-24,15 L-17,7 L-5,1 Z " fill="#000000" transform="translate(144,109)"/>
+  <path d="M0,0 L18,0 L33,3 L49,11 L58,18 L65,26 L73,40 L78,56 L80,68 L80,192 L18,192 L17,81 L14,69 L9,59 L3,54 L-4,51 L-9,50 L-18,50 L-28,53 L-34,57 L-39,62 L-45,72 L-47,85 L-48,192 L-110,192 L-110,4 L-48,4 L-47,29 L-38,18 L-30,11 L-19,5 L-7,1 Z " fill="#000000" transform="translate(326,195)"/>
+  <path d="M0,0 L61,0 L62,1 L62,188 L-1,188 L-1,1 Z " fill="#000000" transform="translate(120,199)"/>
+</svg>

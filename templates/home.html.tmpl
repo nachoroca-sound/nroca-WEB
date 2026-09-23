@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{META_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <link rel="alternate" hreflang="en" href="{{HREFLANG_EN}}">
+  <link rel="alternate" hreflang="x-default" href="{{HREFLANG_EN}}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{META_TITLE}}">
+  <meta property="og:description" content="{{OG_DESCRIPTION}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+
+  <link rel="icon" href="{{ROOT}}favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="{{ROOT}}favicon.svg">
+  <link rel="apple-touch-icon" href="{{ROOT}}apple-touch-icon.png">
+  <link rel="manifest" href="{{ROOT}}site.webmanifest">
+  <link rel="stylesheet" href="{{ROOT}}css/style.css">
+  <link rel="preload" href="{{ROOT}}assets/fonts/AvenirNextCondensed-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ROOT}}assets/fonts/AvenirNext-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-left">
+      <a href="{{HOME_URL}}" class="nav-link{{HOME_ACTIVE}}"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_HOME}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_HOME}}</span></span></a>
+      <a href="{{GAMES_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_GAMES}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_GAMES}}</span></span></a>
+      <a href="{{FILM_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_FILM}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_FILM}}</span></span></a>
+      <a href="{{COMMERCIAL_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_COMMERCIAL}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_COMMERCIAL}}</span></span></a>
+    </nav>
+    <nav class="nav-right">
+      <a href="{{ABOUT_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_ABOUT}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_ABOUT}}</span></span></a>
+      <a href="{{CONTACT_URL}}" class="nav-link"><span class="nav-link__inner"><span class="nav-link__text">{{NAV_LETS_TALK}}</span><span class="nav-link__text" aria-hidden="true">{{NAV_LETS_TALK}}</span></span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+    <nav class="mobile-nav-links">
+      <a href="{{GAMES_URL}}" class="mobile-nav-link{{M_GAMES_ACTIVE}}">{{NAV_GAMES}}</a>
+      <a href="{{FILM_URL}}" class="mobile-nav-link{{M_FILM_ACTIVE}}">{{NAV_FILM}}</a>
+      <a href="{{COMMERCIAL_URL}}" class="mobile-nav-link{{M_COMMERCIAL_ACTIVE}}">{{NAV_COMMERCIAL}}</a>
+      <a href="{{ABOUT_URL}}" class="mobile-nav-link{{M_ABOUT_ACTIVE}}">{{NAV_ABOUT}}</a>
+      <a href="{{CONTACT_URL}}" class="mobile-nav-link{{M_CONTACT_ACTIVE}}">{{NAV_LETS_TALK}}</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Nacho Roc<span class="hero-name-last">a</span></h1>
+        <div class="hero-subtitles">
+          <span class="hero-sub-left">{{HERO_LEFT}}</span>
+          <span class="hero-sub-right">{{HERO_RIGHT}}</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY TILES -->
+    <section class="grid-section">
+      <div class="projects-grid projects-grid--categories">{{GRID_ALL}}</div>
+    </section>
+
+    <!-- SERVICE ICONS -->
+    <section class="skills-section reveal" aria-labelledby="skills-title">
+      <h2 class="skills-title" id="skills-title">{{SKILLS_TITLE}}</h2>
+      <ul class="skills-row">{{SKILL_ITEMS}}
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <span>&copy; <span id="footer-year"></span> Nacho Roca</span>
+      <a href="{{PRIVACY_URL}}">{{FOOTER_PRIVACY}}</a>
+      <span class="footer-credit">{{FOOTER_CREDIT}} <a href="https://www.instagram.com/daigoro_battosai/" target="_blank" rel="noopener">@daigoro_battosai</a></span>
+    </div>
+  </footer>
+
+  <script src="{{ROOT}}js/main.js"></script>
+</body>
+</html>

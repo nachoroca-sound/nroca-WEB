@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Nacho Roca</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .error-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - var(--nav-h) - 6rem);
+      padding: calc(var(--nav-h) + 4rem) 2rem 4rem;
+      text-align: center;
+    }
+    .error-code {
+      font-size: clamp(6rem, 20vw, 14rem);
+      font-weight: var(--weight-black);
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .error-label {
+      font-size: 0.65rem;
+      font-weight: var(--weight-black);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+    }
+    .error-back {
+      font-size: 0.65rem;
+      font-weight: var(--weight-black);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 0.1rem;
+      transition: color 0.15s;
+    }
+    .error-back:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-left">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="games.html" class="nav-link">Games</a>
+      <a href="film.html" class="nav-link">Film</a>
+    </nav>
+    <nav class="nav-right">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Let's Talk</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="error-section">
+      <p class="error-code">404</p>
+      <p class="error-label">Page not found</p>
+      <a class="error-back" href="index.html">&larr; Back to home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom" style="border-top:none;">
+      <span>&copy; <span id="footer-year"></span> Nacho Roca</span>
+      <span></span>
+    </div>
+  </footer>
+
+  <script src="js/404.js"></script>
+</body>
+</html>

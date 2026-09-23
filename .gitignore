@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Editors / local tooling config
+.vscode/
+.idea/
+.claude/settings.json
+.claude/settings.local.json
+*.swp
+*.swo
+
+# Stray/temp
+assets/fonts/Avenir-Next-Font/
+assets/fonts/Avenir-Next-Font.zip
+static/
+
+# Design reference documents (not web assets).
+# Con barra inicial: solo el /docs de la raíz. Sin ella el patrón also matched
+# assets/docs/, que dejaba los PDFs del CV fuera del repo — y fuera de Netlify.
+/docs/
+
+# Fuente de los íconos del hero (PNG originales del PNG.zip): solo los .webp
+# derivados van trackeados, mismo criterio que el logo del favicon.
+assets/img/icons/*.png

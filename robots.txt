@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /demos.html
+Disallow: /projects/demo-
+
+Sitemap: https://nroca.com/sitemap.xml

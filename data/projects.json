@@ -1,0 +1,425 @@
+{
+  "videogames": [
+    {
+      "id": "lords-of-the-fallen",
+      "slug": "lords-of-the-fallen",
+      "title": {
+        "en": "Lords of the Fallen"
+      },
+      "description": {
+        "en": "My studio was brought on during the final months of Lords of the Fallen's development to help the team meet an ambitious production deadline before launch. I led a four-person outsourcing audio team while personally creating the majority of the sound design for the game's enemies and bosses. Each creature was built from the ground up, combining custom foley recordings, synthesis, and detailed sound editing to give every enemy and boss a unique sonic identity that fit the game's dark fantasy universe. Working closely with the internal audio team, I balanced team coordination with hands-on sound design, ensuring we delivered a large volume of high-quality assets within a very tight schedule. The project was an incredible opportunity to contribute to a major AAA title, strengthen my leadership skills, and prove that high-quality creative work can be delivered even under intense production pressure."
+      },
+      "previewVideo": "assets/video/games/lords-of-the-fallen.mp4",
+      "vimeoId": "1060056985",
+      "vimeoId2": "1060057352",
+      "role": "Sound designer",
+      "developer": "CI Games",
+      "genre": "Dark Fantasy",
+      "year": "2024"
+    },
+    {
+      "id": "therefore",
+      "slug": "therefore",
+      "title": {
+        "en": "Therefore"
+      },
+      "description": {
+        "en": "Therefore is a long-term auteur-driven indie project where I define and oversee the game's entire sonic identity. I am responsible for every aspect of the audio experience, including sound design, foley, field recording, and audio implementation. Unlike traditional adventure games, Therefore integrates sound directly into its core gameplay, with puzzles and progression intrinsically tied to audio interactions. Years of development have given me the freedom to experiment, build a unique sonic language, incorporate original field recordings from my travels across Japan, Iceland, Egypt, Zanzibar, and other locations, and carefully polish every detail until even the smallest sounds serve a purpose within the world."
+      },
+      "previewVideo": "assets/video/games/therefore.mp4",
+      "vimeoId": "1060058402",
+      "role": "Audio director",
+      "developer": "Trim Tangle",
+      "genre": "Audio-Driven Narrative Adventure",
+      "year": "2016-2026"
+    },
+    {
+      "id": "zibbo",
+      "slug": "zibbo",
+      "title": {
+        "en": "The Zibbo Show"
+      },
+      "description": {
+        "en": "The Zibbo Show is a dark dystopian dice-building roguelike set inside a twisted television game show where every challenge is a fight for survival. Blending the strategic depth of Balatro with the unsettling atmosphere of Inscryption, it presents a world where entertainment and brutality go hand in hand. I joined the project as Audio Director following my work with Tessera on Hasbro Junior Collection, taking responsibility for defining the game's overall sonic identity. From the eerie ambience of the studio to the mechanical personality of its robotic host, every sound is designed to reinforce the contrast between its vibrant TV-show aesthetic and the disturbing reality behind it."
+      },
+      "previewVideo": "assets/video/games/zibbo.mp4",
+      "vimeoId": "1216054063",
+      "vimeoHash": "c4cc29e54d",
+      "vimeoId2": "1216053893",
+      "vimeoHash2": "3a0732d45f",
+      "role": "Audio director",
+      "developer": "Tessera Games",
+      "genre": "Roguelike Deckbuilder",
+      "year": "2026"
+    },
+    {
+      "id": "automate-it",
+      "slug": "automate-it",
+      "title": {
+        "en": "Automate-it"
+      },
+      "description": {
+        "en": "Published by Forklift Interactive, Automate It is a factory-building puzzle game where players solve increasingly complex challenges by designing, optimizing, and automating machines. I was responsible for creating the game's complete audio identity, including UI feedback, mechanical sound design, environmental ambience, and audio implementation. The main challenge was developing a cohesive sonic language where every machine felt responsive, satisfying, and mechanically believable while ensuring the interface remained clear and intuitive. As players spend long periods interacting with the same systems, I paid special attention to variation, timing, and layering to prevent repetition and listener fatigue, making the audio both informative and enjoyable throughout extended gameplay sessions."
+      },
+      "previewVideo": "assets/video/games/automate-it.mp4",
+      "vimeoId": "1088540796",
+      "vimeoId2": "1060058604",
+      "role": "Audio director",
+      "developer": "South Blue Moon",
+      "genre": "Factory Puzzle",
+      "year": "2025"
+    },
+    {
+      "id": "a-stranded-spark",
+      "slug": "a-stranded-spark",
+      "title": {
+        "en": "A Stranded Spark"
+      },
+      "description": {
+        "en": "A Stranded Spark is a small-scale cozy indie adventure centered around exploration, discovery, and relaxing gameplay. I was responsible for creating the game's complete audio identity, including sound design, environmental ambience, and audio implementation, carefully shaping a sonic world that complements its charming art style and peaceful atmosphere. The main challenge was creating audio that naturally accompanies the player without ever demanding attention, making every interaction feel warm, expressive, and rewarding while allowing exploration and gameplay to remain at the forefront. To reinforce the game's playful personality, I embraced a more tonal and melodic approach to sound design, drawing inspiration from the expressive audio language commonly found in classic family-friendly adventure games. Through subtle environmental details, gentle feedback, and carefully balanced ambiences, the sound quietly enhances the experience, reinforcing the game's sense of comfort, curiosity, and immersion without ever distracting from it."
+      },
+      "previewVideo": "assets/video/games/a-stranded-spark.mp4",
+      "vimeoId": "1201387134",
+      "role": "Audio director",
+      "developer": "Tomate y Cebolla",
+      "genre": "Cozy Adventure",
+      "year": "2026"
+    },
+    {
+      "id": "randoom",
+      "slug": "randoom",
+      "title": {
+        "en": "Randoom"
+      },
+      "description": {
+        "en": "Randoom was a multiplayer arena brawler featuring fully customizable characters and fast-paced PvP combat, where players wielded a wide variety of unconventional weapons to outplay opponents and climb the leaderboard. I was responsible for creating the game's complete audio identity, including weapon sound design, character abilities, voice design, UI, ambience, and audio implementation. This reel showcases a selection of the game's diverse arsenal, featuring everything from oversized guitars to toothbrushes, alongside the vocal design created for character abilities and power-ups. The challenge was to give each weapon and ability its own distinctive personality while maintaining a cohesive audio direction that reinforced the game's playful, chaotic, and competitive nature. Although the project was ultimately cancelled, it was an opportunity to explore a highly stylized and expressive approach to gameplay audio."
+      },
+      "previewVideo": "assets/video/games/randoom.mp4",
+      "vimeoId": "1131676220",
+      "role": "Audio director",
+      "developer": "Dose",
+      "genre": "Multiplayer Arena Brawler",
+      "year": "Project Cancelled"
+    }
+  ],
+  "film": [
+    {
+      "id": "luna",
+      "slug": "luna",
+      "title": {
+        "en": "Luna del Pinal SS21"
+      },
+      "description": {
+        "en": "Luna del Pinal SS21 is a fashion film created for the brand's Spring/Summer 2021 collection, which premiered at London Fashion Week 2021 and was later selected as a Vimeo Staff Pick. As the original production audio was unusable, I recreated the entire soundtrack from scratch, crafting every ambience, foley, and sound effect to build a rich and believable sonic world. Inspired by the language of psychological thrillers, the sound design was carefully shaped to enhance the film's tension and surreal atmosphere, transforming minimalist visuals into an immersive cinematic experience. Every element was designed to support the emotional pacing of the piece while preserving the elegance and sophistication expected from a high-end fashion production."
+      },
+      "previewVideo": "assets/video/film/luna.mp4",
+      "vimeoId": "886097597",
+      "director": "Mariano Schoendorff",
+      "client": "Luna del Pinal",
+      "year": "2021"
+    },
+    {
+      "id": "ferula",
+      "slug": "ferula",
+      "title": {
+        "en": "Férula Placebo"
+      },
+      "description": {
+        "en": "Férula Placebo is an experimental fashion film that transforms a photographic session into a moving visual narrative, exploring how the queer community can use clothing as both a form of expression and a shield from the outside world. Set against a minimalist white backdrop with carefully composed cinematography, the piece relies on subtle movement and texture to communicate emotion without dialogue. I crafted the complete sonic identity through detailed foley and bespoke sound design, using the paper garments themselves as the foundation of the soundtrack. Every fold, crease, and movement was carefully emphasized to transform fragile materials into expressive sonic elements, gradually building tension while preserving the film's delicate and artistic aesthetic. The challenge was to create an immersive audio experience that reinforced the emotional weight of the piece, allowing sound to become an essential part of its visual storytelling rather than simply accompanying the images."
+      },
+      "previewVideo": "assets/video/film/ferula.mp4",
+      "vimeoId": "1060055359",
+      "director": "Marcos Callejo",
+      "client": "Andrés Marti",
+      "year": "2023"
+    },
+    {
+      "id": "for-hemma",
+      "slug": "for-hemma",
+      "title": {
+        "en": "For Hemma"
+      },
+      "description": {
+        "en": "For Hemma is a dance film that explores movement, breath, and physical expression through an intimate and highly tactile audiovisual language, and was later selected as a Vimeo Staff Pick. For the sound design, I recorded the dancers' movements, breathing, breath-holding, and screams, using these recordings as raw material to create a layer of organic textures that intertwines with the original song by Surma. The challenge was to make the performers' physical presence audible, blending their breath, movement and vocal expressions with the music to create a more immersive and visceral experience."
+      },
+      "previewVideo": "assets/video/film/for-hemma.mp4",
+      "vimeoId": "886609457",
+      "director": "Mar del Corral",
+      "year": "2019"
+    },
+    {
+      "id": "the-same-view-wherever-you-look",
+      "slug": "the-same-view-wherever-you-look",
+      "title": {
+        "en": "The same view wherever you look"
+      },
+      "description": {
+        "en": "The Same View Wherever You Look is a 2024 dance film directed by Carmen Bamba, with music composed by Gustavo Gill. The film has been selected for several international dance and film festivals, including Prisma Rome Independent Film Awards, Braga Dance Festival, DanzaTTack and International Dance Festival Anzahra. I edited and mixed Gustavo Gill's original score, incorporating additional sound design and musical modulation to emphasize the frantic pace and raw character of the soundtrack. The sound work was shaped around the movement and rhythm of the choreography, manipulating elements of the original composition to heighten the tension and create a more dynamic and unpredictable relationship between the music, movement and image."
+      },
+      "previewVideo": "assets/video/film/the-same-view-wherever-you-look.mp4",
+      "vimeoId": "1060153447",
+      "director": "Carmen Bamba",
+      "year": "2024"
+    },
+    {
+      "id": "alegal",
+      "slug": "alegal",
+      "title": {
+        "en": "Alegal"
+      },
+      "description": {
+        "en": "Alegal's Not Another F*cking Restaurant is a short-form commercial directed by Sergio Miña, created to introduce the restaurant through a cinematic and irreverent narrative. The campaign reflects Alegal's concept as a restaurant and nightlife space built around a distinctive, theatrical atmosphere. I was responsible for the sound design and final mix, building the sonic world of the piece from the ground up. The sound design was shaped around the film's fast-paced editing and playful attitude, using detailed effects, transitions and rhythmic elements to reinforce the visual storytelling and give the commercial the feel of a short film."
+      },
+      "previewVideo": "assets/video/film/alegal.mp4",
+      "vimeoId": "1131292129",
+      "director": "Sergio Miña",
+      "year": "2025"
+    },
+    {
+      "id": "mi-discreto-encanto",
+      "slug": "mi-discreto-encanto",
+      "title": {
+        "en": "Mi discreto encanto"
+      },
+      "description": {
+        "en": "Mi Discreto Encanto is a short film directed by Mariano Schoendorff, offering a glimpse into a small fragment of its protagonist's life. The film follows an extravagant, privileged young woman who, despite her eccentric personality, is deeply detached from the world around her and has little interest in dealing with it. The story plays with her attitude through a subtle and often absurd sense of comedy. I was responsible for the sound design and mix, using sound as part of the film's comedic language. The sonic details were shaped around the character's actions, expressions and awkward situations, adding rhythm and humor while reinforcing the eccentric world she inhabits."
+      },
+      "previewVideo": "assets/video/film/mi-discreto-encanto.mp4",
+      "vimeoId": "886574405",
+      "director": "Mariano Schoendorff",
+      "year": "2020"
+    },
+    {
+      "id": "pigeonhole",
+      "slug": "pigeonhole",
+      "title": {
+        "en": "Pigeonhole"
+      },
+      "description": {
+        "en": "Pigeonhole is a contemporary short film built around isolation, vulnerability, and an underlying sense of tension. The story follows a model recovering alone in a remote holiday house, where an unexpected encounter gradually disrupts the fragile calm of her surroundings. I shaped the sound design to reflect this growing unease, using subtle environmental details, foley, and carefully controlled silences to create a sense of anticipation without relying on conventional thriller tropes. The sonic approach remains intimate and restrained, allowing small sounds and changes in the environment to gradually become more significant as the story unfolds."
+      },
+      "previewVideo": "assets/video/film/pigeonhole.mp4",
+      "vimeoId": "1221751229",
+      "director": "Mariano Schoendorff",
+      "year": "2025"
+    },
+    {
+      "id": "they-send-word",
+      "slug": "they-send-word",
+      "title": {
+        "en": "They send word"
+      },
+      "description": {
+        "en": "They Send Word is a 2024 short film directed by Mariano Schoendorff, following José Manuel Ordovás as he recounts an extraordinary journey through loneliness, violence, crime and drugs, before finding salvation in an unexpected congregation of aliens. The film premiered at the SEMINCI — Valladolid International Film Festival and is currently available on Filmin. I was responsible for the sound design and mix, working alongside Nicolas Schilke's original score to shape the sonic identity of the film. The sound was built around José Manuel's intense and unconventional testimony, using detailed environmental sounds and carefully crafted sonic elements to support the rhythm of his narration and the film's shifting tone. The challenge was to find the right balance between the documentary nature of his story and its increasingly surreal character, allowing the sound to subtly reinforce the humour, tension and strangeness of his world."
+      },
+      "previewVideo": "assets/video/film/they-send-word.mp4",
+      "vimeoId": "1125217357",
+      "director": "Mariano Schoendorff",
+      "year": "2024"
+    },
+    {
+      "id": "anecoica",
+      "slug": "anecoica",
+      "title": {
+        "en": "Anecoica"
+      },
+      "description": {
+        "en": "Anecoica is a 2023 psychological thriller short film directed by Marcos Callejo. The film follows Ana, a woman who agrees to take part in an illegal experiment in which she is locked inside an anechoic chamber in exchange for a financial reward. As the silence intensifies, it gradually becomes her greatest enemy. I worked on the sound design alongside Jaime Gascón, my partner at Who Sounds, creating the sonic environment around the film's central concept of absolute silence. The challenge was to make silence itself feel present, using subtle details, internal sounds and carefully controlled dynamics to reflect Ana's growing unease and psychological deterioration. The sound design plays with the contrast between near silence and sudden sonic events, building tension while keeping the audience closely connected to Ana's increasingly distorted perception of her surroundings."
+      },
+      "previewVideo": "assets/video/film/anecoica.mp4",
+      "vimeoId": "1221579395",
+      "director": "Marcos Callejo",
+      "year": "2023"
+    }
+  ],
+  "commercial": [
+    {
+      "id": "c-tangana",
+      "slug": "c-tangana",
+      "title": {
+        "en": "C. Tangana × Bershka"
+      },
+      "description": {
+        "en": "C. Tangana × Bershka was an international campaign produced by Little Spain to launch the collaboration celebrating El Madrileño. My role focused on shaping the project's sonic identity through custom sound design and audio post-production, carefully supporting its cinematic visual language without overshadowing the music. Every sound was crafted to enhance movement, rhythm, and storytelling, bringing an extra layer of energy and realism to the campaign while maintaining the refined aesthetic expected from an international fashion production."
+      },
+      "previewVideo": "assets/video/commercial/c-tangana.mp4",
+      "vimeoId": "886097103",
+      "director": "Mariano Schoendorff",
+      "client": "Little Planet",
+      "year": "2021"
+    },
+    {
+      "id": "tous",
+      "slug": "tous",
+      "title": {
+        "en": "TOUS Behind the Bear"
+      },
+      "description": {
+        "en": "TOUS Behind the Bear is a branded short film that explores the craftsmanship behind the creation of the brand's iconic bear. This reel features the Director's Cut version, for which I crafted the complete sonic identity through bespoke sound design, foley, and richly layered textures. Every stage of the manufacturing process, from forging and shaping the metal to polishing and the final reveal, was carefully enhanced to emphasize the precision, care, and tactile quality of each step. The challenge was to create an elegant and understated soundscape that celebrated the artistry behind the piece, adding depth and realism while preserving the refined aesthetic that defines the TOUS brand."
+      },
+      "previewVideo": "assets/video/commercial/tous.mp4",
+      "vimeoId": "1060055648",
+      "director": "Mariano Schoendorff",
+      "client": "TOUS",
+      "year": "2023"
+    },
+    {
+      "id": "mad-lions",
+      "slug": "mad-lions",
+      "title": {
+        "en": "MAD Squad Roster Reveal"
+      },
+      "description": {
+        "en": "MAD Lions Mad Squad 2023 Roster Reveal is a cinematic reveal trailer introducing the team's 2023 roster through the visual language of a classic horror film. Inspired by the creation of Frankenstein's monster, the piece reimagines each player as part of a dark and suspenseful experiment, blending esports with vintage horror aesthetics. I crafted the complete sonic identity, combining cinematic sound design, foley, and dramatic transitions to enhance the tension and bring the laboratory to life. From crackling electricity and heavy machinery to subtle atmospheric details, every sound was designed to support the transformation sequence and reinforce the trailer's bold, theatrical style while delivering the impact expected from a roster reveal."
+      },
+      "previewVideo": "assets/video/commercial/mad-lions.mp4",
+      "vimeoId": "886101954",
+      "director": "Sergio Miña",
+      "client": "MAD Lions (Now Movistar KOI)",
+      "year": "2023"
+    },
+    {
+      "id": "nissan-versa",
+      "slug": "nissan-versa",
+      "title": {
+        "en": "Nissan Versa"
+      },
+      "description": {
+        "en": "For Nissan Versa, produced by Oriental Films in Mexico and directed by Santa™, I was commissioned to create both the original music and sound design for the campaign. Working alongside Pablo Qvilava, I composed a K-pop-inspired track specifically tailored to the visual identity and fast-paced energy of the piece. To create the vocal performance, we used Synthesizer V to generate and shape an artificial singing voice, allowing us to build the vocal character and phrasing from scratch. Alongside the music, I designed the complete soundscape of the film, creating and layering all the sound effects to complement the visuals and give the piece its own sonic identity."
+      },
+      "previewVideo": "assets/video/commercial/nissan-versa.mp4",
+      "vimeoId": "1221518472",
+      "director": "Santa™",
+      "agency": "Oriental Films",
+      "year": "2023"
+    },
+    {
+      "id": "seat-mad-lions-the-pride",
+      "slug": "seat-mad-lions-the-pride",
+      "title": {
+        "en": "Seat x Mad Lions | The Pride"
+      },
+      "description": {
+        "en": "An animated reveal film created for the launch of MAD Lions' new jersey in collaboration with SEAT. As an entirely animated piece, every sound was created from scratch, with no production audio to work from. I designed the complete sonic world of the film, creating and layering sounds for every movement, transition and visual detail. From the smallest gestures to the main jersey reveal, the sound design was built to follow the animation frame by frame, giving weight, rhythm and impact to the visuals and bringing the entire piece to life."
+      },
+      "previewVideo": "assets/video/commercial/seat-mad-lions-the-pride.mp4",
+      "vimeoId": "1065188577",
+      "director": "Nacho Ezquerra",
+      "client": "MAD Lions (Now Movistar KOI)",
+      "year": "2023"
+    },
+    {
+      "id": "ford",
+      "slug": "ford",
+      "title": {
+        "en": "Ford Lobo"
+      },
+      "description": {
+        "en": "Ford Lobo is a commercial produced by Oriental Films, one of Mexico's leading production companies, in collaboration with the creative team at Garra. I was responsible for the project's complete audio post-production, including bespoke sound design, foley, editing, mixing, and music editing. Every sound was carefully crafted and synchronized to reinforce the vehicle's power, presence, and cinematic pacing, while seamlessly blending with the music to create a cohesive audiovisual experience. The project required a polished, high-end approach, balancing impactful sound design with the refined production values expected from an international automotive campaign."
+      },
+      "previewVideo": "assets/video/commercial/ford.mp4",
+      "vimeoId": "886102257",
+      "director": "Garra",
+      "client": "Oriental Films",
+      "year": "2023"
+    },
+    {
+      "id": "fresca-campana",
+      "slug": "fresca-campana",
+      "title": {
+        "en": "Fresca México"
+      },
+      "description": {
+        "en": "For Fresca, a Mexican soda brand, I worked with Oriental Films on a campaign consisting of three commercial pieces, creating both the original music and sound design. Working again alongside Pablo Qvilava, we composed the original music across the campaign, developing a playful and energetic sound that matched the brand's carefree tone. The sound design was tailored to each piece, using exaggerated and playful sound effects to complement the visuals, enhance the comedic timing and reinforce the campaign's lighthearted personality."
+      },
+      "previewVideo": "assets/video/commercial/fresca-campana.mp4",
+      "vimeoId": "1221518404",
+      "director": "Santa™",
+      "agency": "Oriental Films",
+      "year": "2024"
+    },
+    {
+      "id": "london-calling-pepe-jeans",
+      "slug": "london-calling-pepe-jeans",
+      "title": {
+        "en": "London Calling by Pepe Jeans"
+      },
+      "description": {
+        "en": "For Pepe Jeans' London Calling campaign, I worked across more than 20 pieces, handling the music editing and mixing for the campaign's different assets. The work involved adapting and refining the music across multiple formats and edits, ensuring consistency and impact across the full campaign while maintaining the intended character of the original track. I also provided sound design for several of the pieces, creating and integrating additional sound elements to complement the visuals and enhance the overall audiovisual experience."
+      },
+      "previewVideo": "assets/video/commercial/london-calling-pepe-jeans.mp4",
+      "vimeoId": "1221525915",
+      "vimeoId2": "1221525991",
+      "director": "Uncredited by request",
+      "production": "CAP",
+      "year": "2021"
+    },
+    {
+      "id": "baker-mckenzie-50th-anniversary",
+      "slug": "baker-mckenzie-50th-anniversary",
+      "title": {
+        "en": "Baker McKenzie 50th Anniversary"
+      },
+      "description": {
+        "en": "We were commissioned to create the entire 50th anniversary campaign for Baker McKenzie, developing the project from concept and creative development through to the final audiovisual pieces. The campaign was directed by my brother, Jorge Roca, and developed while we were working as an agency and studio under Who! Estudio Creativo in 2015. Our work covered the creative development and production of the campaign, creating a cohesive visual and audiovisual identity around the firm's 50th anniversary and adapting it across the different pieces. The campaign culminated in the premiere of the anniversary film at the Madrid Stock Exchange, an event attended by prominent public figures and emblematic personalities, bringing the project together in a large-scale celebration of the firm's history and milestone."
+      },
+      "previewVideo": "assets/video/commercial/baker-mckenzie-50th-anniversary.mp4",
+      "vimeoId": "886100804",
+      "director": "Jorge Roca",
+      "agency": "Who Estudio",
+      "year": "2015"
+    }
+  ],
+  "demos": [
+    {
+      "id": "demo-01",
+      "slug": "demo-01",
+      "title": {
+        "en": "Lords of the Fallen | Cinematic Demo"
+      },
+      "description": {
+        "en": "Here's the pre-employment test I completed for CI Games before being hired for Lords of the Fallen. In this task, I used my personal sound library, foley techniques and synthesizers to entirely reconstruct the ambient sounds and effects for this cinematic."
+      },
+      "previewVideo": "assets/video/demos/demo-lotf.mp4",
+      "vimeoId": "1060133671"
+    },
+    {
+      "id": "demo-02",
+      "slug": "demo-02",
+      "title": {
+        "en": "Crisol: Theater of Idols | Sound Design Demo"
+      },
+      "description": {
+        "en": "This is a quick sound design demo I created for Crisol: Theater of Idols trailer, prepared specifically for my interview with Vermila. In this demo, I focused on designing sound effects for key game elements, including weapons that are charged with blood, as well as enemies, impacts, and ambient sounds."
+      },
+      "previewVideo": "assets/video/demos/demo-crisol.mp4",
+      "vimeoId": "1060097314"
+    },
+    {
+      "id": "demo-03",
+      "slug": "demo-03",
+      "title": {
+        "en": "Path of Exile 2 | Huntress — Sound Design Demo"
+      },
+      "description": {
+        "en": "These videos were created as part of the final stage of the recruitment process at Grinding Gear Games. For this sound design test, I redesigned the abilities of two distinct character classes, carefully crafting each skill to respect the game's dark, grounded aesthetic and seamlessly fit within its established audio direction. The focus was on creating impactful, readable, and immersive abilities that felt authentic to the world of Path of Exile 2 while showcasing my approach to AAA gameplay sound design."
+      },
+      "previewVideo": "assets/video/demos/demo-poe2-huntress.mp4",
+      "vimeoId": "1210252220",
+      "vimeoHash": "0ea5debda3"
+    },
+    {
+      "id": "demo-04",
+      "slug": "demo-04",
+      "title": {
+        "en": "Path of Exile 2 | Monk — Sound Design Demo"
+      },
+      "description": {
+        "en": "These videos were created as part of the final stage of the recruitment process at Grinding Gear Games. For this sound design test, I redesigned the abilities of two distinct character classes, carefully crafting each skill to respect the game's dark, grounded aesthetic and seamlessly fit within its established audio direction. The focus was on creating impactful, readable, and immersive abilities that felt authentic to the world of Path of Exile 2 while showcasing my approach to AAA gameplay sound design."
+      },
+      "previewVideo": "assets/video/demos/demo-poe2-monk.mp4",
+      "vimeoId": "1210252219",
+      "vimeoHash": "7304617901"
+    }
+  ]
+}
