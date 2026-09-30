@@ -363,7 +363,9 @@ body.nav-open { overflow: hidden; }
 .skills-section {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 5rem 2rem 6rem;
+  /* Sin padding-top: el aire superior lo pone el padding-bottom de
+     .grid-section (6rem), igual al inferior de aquí. Mantenerlos iguales. */
+  padding: 0 2rem 6rem;
 }
 .skills-title {
   font-size: 0.65rem;
@@ -809,7 +811,7 @@ body.nav-open { overflow: hidden; }
   }
   .projects-grid,
   .projects-grid--categories { grid-template-columns: 1fr; }
-  .skills-section { padding: 3.5rem 1rem 4.5rem; }
+  .skills-section { padding: 0 1rem 4.5rem; } /* = .grid-section padding-bottom */
   /* En móvil pasa a grid: con flex y anchos fijos no caben 5 a 375px y caía en
      3+3+3+1. Cinco columnas fluidas garantizan el 5 + 5 exacto. */
   .skills-row {
