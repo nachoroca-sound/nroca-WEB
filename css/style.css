@@ -440,12 +440,13 @@ body.nav-open { overflow: hidden; }
   letter-spacing: -0.01em;
   line-height: 1.1;
 }
-/* Ordenador: la frase cabe en una línea. 25.3em = ancho medido de la frase sin
-   punto final (≈24.77em, vídeo incluido) + margen para la barra de scroll de
-   Windows y diferencias de render entre SO. */
+/* Ordenador: el claim termina a ras del borde derecho de la foto/bio de abajo.
+   24.78em = ancho real medido de la frase (vídeo incluido), prácticamente sin
+   margen para que el final coincida con el texto. Si algún sistema la
+   renderiza un pelín más ancha, cae a 2 líneas en vez de desbordarse. */
 @media (min-width: 1024px) {
   .about-manifesto {
-    font-size: min(calc((100vw - 4rem) / 25.3), calc((var(--max-width) - 4rem) / 25.3));
+    font-size: min(calc((100vw - 4rem) / 24.78), calc((var(--max-width) - 4rem) / 24.78));
   }
 }
 .manifesto-text { display: inline; }
@@ -601,7 +602,9 @@ body.nav-open { overflow: hidden; }
   text-transform: uppercase;
   letter-spacing: -0.01em;
   line-height: 1;
-  margin-bottom: 2.5rem;
+  /* 12px de caja = 20px visuales hasta el vídeo: el espacio invisible bajo
+     las mayúsculas (descender de la fuente) ya pone los otros 8px. */
+  margin-bottom: 12px;
   text-align: center;
 }
 
