@@ -132,7 +132,7 @@ def render_grid_cell(item, lang, root_prefix):
     url = root_prefix + project_url(item, lang)
     preview = item.get("previewVideo", "")
     media = (
-        f'<video src="{root_prefix + preview}" muted loop playsinline preload="none"></video>'
+        f'<video src="{root_prefix + preview}" muted loop playsinline preload="none" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback noplaybackrate"></video>'
         if preview else ""
     )
     return f"""
@@ -153,7 +153,7 @@ def render_category_tile(tile, lang, root_prefix):
     """
     preview = tile["previewVideo"]
     media = (
-        f'<video src="{root_prefix + preview}" muted loop playsinline preload="none"></video>'
+        f'<video src="{root_prefix + preview}" muted loop playsinline preload="none" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback noplaybackrate"></video>'
         if preview else ""
     )
     return f"""
