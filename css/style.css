@@ -429,7 +429,7 @@ body.nav-open { overflow: hidden; }
 
 /* ---------- About page ---------- */
 .about-manifesto-section {
-  padding: calc(var(--nav-h) + 5rem) 2rem 5rem;
+  padding: calc(var(--nav-h) + 5rem) 2rem 7rem;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -440,12 +440,12 @@ body.nav-open { overflow: hidden; }
   letter-spacing: -0.01em;
   line-height: 1.1;
 }
-/* Ordenador: la frase cabe en una línea. 26em = ancho medido de la frase
-   (≈25.1em, vídeo incluido) + margen para la barra de scroll de Windows y
-   diferencias de render entre SO. */
+/* Ordenador: la frase cabe en una línea. 25.3em = ancho medido de la frase sin
+   punto final (≈24.77em, vídeo incluido) + margen para la barra de scroll de
+   Windows y diferencias de render entre SO. */
 @media (min-width: 1024px) {
   .about-manifesto {
-    font-size: min(calc((100vw - 4rem) / 26), calc((var(--max-width) - 4rem) / 26));
+    font-size: min(calc((100vw - 4rem) / 25.3), calc((var(--max-width) - 4rem) / 25.3));
   }
 }
 .manifesto-text { display: inline; }
@@ -850,7 +850,7 @@ body.nav-open { overflow: hidden; }
     padding: 1.5rem 1.2rem;
   }
   .footer-credit { text-align: center; }
-  .about-manifesto-section { padding: calc(var(--nav-h) + 3rem) 1.2rem 3rem; }
+  .about-manifesto-section { padding: calc(var(--nav-h) + 3rem) 1.2rem 4rem; }
   .about-bio-section { padding: 0 1.2rem 4rem; }
   .contact-section { padding: calc(var(--nav-h) + 3rem) 1.2rem 4rem; }
   .project-detail { padding: calc(var(--nav-h) + 2rem) 1.2rem 4rem; }
