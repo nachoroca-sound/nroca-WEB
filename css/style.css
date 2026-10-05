@@ -454,7 +454,7 @@ body.nav-open { overflow: hidden; }
   display: inline-block;
   vertical-align: middle;
   height: 1.2em;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 150 / 112; /* proporción nativa de audio-playing.mp4: sin recorte */
   border-radius: 8px;
   overflow: hidden;
   /* El hueco a ambos lados lo da solo este margen: las partes de texto no
