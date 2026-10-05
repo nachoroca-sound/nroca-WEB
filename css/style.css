@@ -440,6 +440,14 @@ body.nav-open { overflow: hidden; }
   letter-spacing: -0.01em;
   line-height: 1.1;
 }
+/* Ordenador: la frase cabe en una línea. 26em = ancho medido de la frase
+   (≈25.1em, vídeo incluido) + margen para la barra de scroll de Windows y
+   diferencias de render entre SO. */
+@media (min-width: 1024px) {
+  .about-manifesto {
+    font-size: min(calc((100vw - 4rem) / 26), calc((var(--max-width) - 4rem) / 26));
+  }
+}
 .manifesto-text { display: inline; }
 .manifesto-img {
   display: inline-block;
@@ -452,7 +460,10 @@ body.nav-open { overflow: hidden; }
 }
 .manifesto-video {
   display: inline-block;
-  vertical-align: middle;
+  /* Centrado con las mayúsculas, no con la x-height (middle quedaba bajo):
+     altura de mayúscula de Avenir Next ≈ 0.708em → centro 0.354em;
+     caja de 1.2em → base a 0.354 − 0.6 = −0.246em. */
+  vertical-align: -0.246em;
   height: 1.2em;
   aspect-ratio: 150 / 112; /* proporción nativa de audio-playing.mp4: sin recorte */
   border-radius: 8px;
