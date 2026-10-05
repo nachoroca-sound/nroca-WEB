@@ -429,7 +429,9 @@ body.nav-open { overflow: hidden; }
 
 /* ---------- About page ---------- */
 .about-manifesto-section {
-  padding: calc(var(--nav-h) + 5rem) 2rem 7rem;
+  /* Abajo: 36px de caja + ~13.7px de espacio invisible bajo las mayúsculas
+     (line-height 1.1) = 50px visuales hasta la foto/bio. */
+  padding: calc(var(--nav-h) + 3.5rem) 2rem 36px;
   max-width: var(--max-width);
   margin: 0 auto;
 }
