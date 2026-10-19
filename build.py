@@ -291,7 +291,7 @@ def build_games_pages():
         mapping = common_mapping(
             lang, root_prefix, canonical,
             hreflang_en=BASE_URL + "games.html",
-            meta_title=f"{t(lang, 'videogames.title')} — Nacho Roca",
+            meta_title=f"{t(lang, 'videogames.title')} | Nacho Roca",
             meta_description=t(lang, "meta.gamesDescription"),
             og_description=t(lang, "meta.gamesDescription"),
             active_page="games",
@@ -320,7 +320,7 @@ def build_film_pages():
         mapping = common_mapping(
             lang, root_prefix, canonical,
             hreflang_en=BASE_URL + "film.html",
-            meta_title=f"{t(lang, 'film.title')} — Nacho Roca",
+            meta_title=f"{t(lang, 'film.title')} | Nacho Roca",
             meta_description=t(lang, "meta.filmDescription"),
             og_description=t(lang, "meta.filmDescription"),
             active_page="film",
@@ -349,7 +349,7 @@ def build_commercial_pages():
         mapping = common_mapping(
             lang, root_prefix, canonical,
             hreflang_en=BASE_URL + "commercial.html",
-            meta_title=f"{t(lang, 'commercial.title')} — Nacho Roca",
+            meta_title=f"{t(lang, 'commercial.title')} | Nacho Roca",
             meta_description=t(lang, "meta.commercialDescription"),
             og_description=t(lang, "meta.commercialDescription"),
             active_page="commercial",
@@ -376,7 +376,7 @@ def build_about_pages():
         mapping = common_mapping(
             lang, root_prefix, canonical,
             hreflang_en=BASE_URL + "about.html",
-            meta_title=f"{t(lang, 'nav.about')} — Nacho Roca",
+            meta_title=f"{t(lang, 'nav.about')} | Nacho Roca",
             meta_description=t(lang, "meta.aboutDescription"),
             og_description=t(lang, "meta.aboutDescription"),
             active_page="about",
@@ -410,7 +410,7 @@ def build_contact_pages():
         mapping = common_mapping(
             lang, root_prefix, canonical,
             hreflang_en=BASE_URL + "contact.html",
-            meta_title=f"{t(lang, 'contact.title')} — Nacho Roca",
+            meta_title=f"{t(lang, 'contact.title')} | Nacho Roca",
             meta_description=t(lang, "meta.contactDescription"),
             og_description=t(lang, "meta.contactDescription"),
             active_page="contact",
@@ -438,7 +438,7 @@ def build_demos_pages():
         mapping = common_mapping(
             lang, root_prefix, canonical,
             hreflang_en=BASE_URL + "demos.html",
-            meta_title=f"{t(lang, 'demos.title')} — Nacho Roca",
+            meta_title=f"{t(lang, 'demos.title')} | Nacho Roca",
             meta_description=t(lang, "meta.siteDescription"),
             og_description=t(lang, "meta.ogDescription"),
         )
@@ -453,7 +453,21 @@ def build_demos_pages():
 PROJECT_CAT_TO_NAV_PAGE = {"videogames": "games", "film": "film", "commercial": "commercial"}
 
 
+def remove_orphan_project_pages():
+    """Drop projects/<slug>.html for slugs no longer in projects.json (renames)."""
+    live = {item["slug"] for items in projects.values() for item in items}
+    for lang in LANGS:
+        out_dir = ROOT_DIR / "projects" if lang == "en" else ROOT_DIR / "projects" / "es"
+        if not out_dir.is_dir():
+            continue
+        for page in out_dir.glob("*.html"):
+            if page.stem not in live:
+                page.unlink()
+                print(f"removed orphan {page.relative_to(ROOT_DIR)}")
+
+
 def build_project_pages():
+    remove_orphan_project_pages()
     for cat, items in projects.items():
         n = len(items)
         for i, item in enumerate(items):
@@ -483,7 +497,7 @@ def build_project_pages():
                 mapping = common_mapping(
                     lang, root_prefix, canonical,
                     hreflang_en=BASE_URL + project_url(item, "en"),
-                    meta_title=f"{title} — Nacho Roca",
+                    meta_title=f"{title} | Nacho Roca",
                     meta_description=description,
                     og_description=description,
                     active_page=PROJECT_CAT_TO_NAV_PAGE.get(cat),

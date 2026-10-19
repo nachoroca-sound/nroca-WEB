@@ -2,7 +2,7 @@
   "videogames": [
     {
       "id": "lords-of-the-fallen",
-      "slug": "lords-of-the-fallen",
+      "slug": "lordsofthefallen",
       "title": {
         "en": "Lords of the Fallen"
       },
@@ -30,17 +30,17 @@
       "vimeoId": "1060058402",
       "role": "Audio director",
       "developer": "Trim Tangle",
-      "genre": "Audio-Driven Narrative Adventure",
-      "year": "2016-2026"
+      "genre": "Open-World Narrative Adventure",
+      "year": "2016-Present"
     },
     {
       "id": "zibbo",
-      "slug": "zibbo",
+      "slug": "thezibboshow",
       "title": {
         "en": "The Zibbo Show"
       },
       "description": {
-        "en": "The Zibbo Show is a dark dystopian dice-building roguelike set inside a twisted television game show where every challenge is a fight for survival. I joined the project as Audio Director, taking responsibility for defining its overall sonic identity. The soundscape combines eerie environmental tones with the focused tension of a high-stakes game show, using rising pitches and casino-inspired cues to build anticipation and excitement without becoming overwhelming. From the studio ambience to the mechanical personality of its robotic host, every sound reinforces the contrast between its vibrant TV-show aesthetic and the disturbing reality behind it. The game's reveal trailer was also featured by IGN."
+        "en": "The Zibbo Show is a dark dystopian dice-building roguelike set inside a twisted television game show where every challenge is a fight for survival. I joined the project as Audio Director and Sound Designer, taking responsibility for defining and implementing its overall sonic identity. The soundscape combines eerie environmental tones with the focused tension of a high-stakes game show, using rising pitches and casino-inspired cues to build anticipation and excitement without becoming overwhelming. From the studio ambience to the mechanical personality of its robotic host, every sound reinforces the contrast between its vibrant TV-show aesthetic and the disturbing reality behind it. The game's reveal trailer was also featured by IGN."
       },
       "previewVideo": "assets/video/games/zibbo.mp4",
       "vimeoId": "1216054063",
@@ -54,9 +54,9 @@
     },
     {
       "id": "automate-it",
-      "slug": "automate-it",
+      "slug": "automateit",
       "title": {
-        "en": "Automate-it"
+        "en": "Automate It"
       },
       "description": {
         "en": "Published by Forklift Interactive, Automate It is a factory-building puzzle game where players solve increasingly complex challenges by designing, optimizing, and automating machines. I was responsible for creating the game's complete audio identity, including UI feedback, mechanical sound design, environmental ambience, and audio implementation. The main challenge was developing a cohesive sonic language where every machine felt responsive, satisfying, and mechanically believable while ensuring the interface remained clear and intuitive. As players spend long periods interacting with the same systems, I paid special attention to variation, timing, and layering to prevent repetition and listener fatigue, making the audio both informative and enjoyable throughout extended gameplay sessions."
@@ -71,12 +71,12 @@
     },
     {
       "id": "a-stranded-spark",
-      "slug": "a-stranded-spark",
+      "slug": "astrandedspark",
       "title": {
         "en": "A Stranded Spark"
       },
       "description": {
-        "en": "A Stranded Spark is a small-scale cozy indie adventure centered around exploration, discovery, and relaxing gameplay. I was responsible for creating the game's complete audio identity, including sound design, environmental ambience, and audio implementation, carefully shaping a sonic world that complements its charming art style and peaceful atmosphere. The main challenge was creating audio that naturally accompanies the player without ever demanding attention, making every interaction feel warm, expressive, and rewarding while allowing exploration and gameplay to remain at the forefront. To reinforce the game's playful personality, I embraced a more tonal and melodic approach to sound design, drawing inspiration from the expressive audio language commonly found in classic family-friendly adventure games. Through subtle environmental details, gentle feedback, and carefully balanced ambiences, the sound quietly enhances the experience, reinforcing the game's sense of comfort, curiosity, and immersion without ever distracting from it."
+        "en": "A Stranded Spark is a small-scale cozy indie adventure centered around exploration, discovery, and relaxing gameplay. I handled the sound design, environmental ambience, and audio implementation, crafting a sonic world that complements its charming art style and peaceful atmosphere. The main challenge was making every interaction feel warm, expressive, and rewarding without distracting from exploration. I embraced a tonal and melodic approach inspired by the expressive sound design of classic family-friendly adventure games, using subtle environmental details, gentle feedback, and carefully balanced ambiences to enhance the sense of comfort, curiosity, and immersion."
       },
       "previewVideo": "assets/video/games/a-stranded-spark.mp4",
       "vimeoId": "1201387134",
@@ -92,7 +92,7 @@
         "en": "Randoom"
       },
       "description": {
-        "en": "Randoom was a multiplayer arena brawler featuring fully customizable characters and fast-paced PvP combat, where players wielded a wide variety of unconventional weapons to outplay opponents and climb the leaderboard. I was responsible for creating the game's complete audio identity, including weapon sound design, character abilities, voice design, UI, ambience, and audio implementation. This reel showcases a selection of the game's diverse arsenal, featuring everything from oversized guitars to toothbrushes, alongside the vocal design created for character abilities and power-ups. The challenge was to give each weapon and ability its own distinctive personality while maintaining a cohesive audio direction that reinforced the game's playful, chaotic, and competitive nature. Although the project was ultimately cancelled, it was an opportunity to explore a highly stylized and expressive approach to gameplay audio."
+        "en": "Randoom was a multiplayer arena brawler featuring fully customizable characters and fast-paced PvP combat, where players wielded a wide variety of unconventional weapons to outplay their opponents and climb the leaderboard. I was responsible for the game's complete audio identity, including weapon sound design, character abilities, voice design, UI, ambience, and audio implementation. This reel showcases a selection of the game's diverse arsenal, featuring everything from guitars to toothbrushes, alongside the vocal design for character abilities and power-ups. The challenge was to give each weapon and ability its own distinctive personality while maintaining a cohesive audio direction that reinforced the game's playful, chaotic, and competitive nature. Although the project was ultimately cancelled, it provided an opportunity to explore a highly stylized and expressive approach to gameplay audio."
       },
       "previewVideo": "assets/video/games/randoom.mp4",
       "vimeoId": "1131676220",
@@ -105,7 +105,7 @@
   "film": [
     {
       "id": "luna",
-      "slug": "luna",
+      "slug": "lunadelpinal",
       "title": {
         "en": "Luna del Pinal SS21"
       },
@@ -135,7 +135,7 @@
     },
     {
       "id": "for-hemma",
-      "slug": "for-hemma",
+      "slug": "forhemma",
       "title": {
         "en": "For Hemma"
       },
@@ -149,7 +149,7 @@
     },
     {
       "id": "the-same-view-wherever-you-look",
-      "slug": "the-same-view-wherever-you-look",
+      "slug": "thesameviewwhereveryoulook",
       "title": {
         "en": "The same view wherever you look"
       },
@@ -177,7 +177,7 @@
     },
     {
       "id": "mi-discreto-encanto",
-      "slug": "mi-discreto-encanto",
+      "slug": "midiscretoencanto",
       "title": {
         "en": "Mi discreto encanto"
       },
@@ -205,7 +205,7 @@
     },
     {
       "id": "they-send-word",
-      "slug": "they-send-word",
+      "slug": "theysendword",
       "title": {
         "en": "They send word"
       },
@@ -235,7 +235,7 @@
   "commercial": [
     {
       "id": "c-tangana",
-      "slug": "c-tangana",
+      "slug": "ctanganaxbershka",
       "title": {
         "en": "C. Tangana × Bershka"
       },
@@ -265,7 +265,7 @@
     },
     {
       "id": "mad-lions",
-      "slug": "mad-lions",
+      "slug": "madsquad",
       "title": {
         "en": "MAD Squad Roster Reveal"
       },
@@ -280,7 +280,7 @@
     },
     {
       "id": "nissan-versa",
-      "slug": "nissan-versa",
+      "slug": "nissan",
       "title": {
         "en": "Nissan Versa"
       },
@@ -295,7 +295,7 @@
     },
     {
       "id": "seat-mad-lions-the-pride",
-      "slug": "seat-mad-lions-the-pride",
+      "slug": "seatxmadlions",
       "title": {
         "en": "Seat x Mad Lions | The Pride"
       },
@@ -325,7 +325,7 @@
     },
     {
       "id": "fresca-campana",
-      "slug": "fresca-campana",
+      "slug": "fresca",
       "title": {
         "en": "Fresca México"
       },
@@ -340,7 +340,7 @@
     },
     {
       "id": "london-calling-pepe-jeans",
-      "slug": "london-calling-pepe-jeans",
+      "slug": "pepejeans",
       "title": {
         "en": "London Calling by Pepe Jeans"
       },
@@ -356,7 +356,7 @@
     },
     {
       "id": "baker-mckenzie-50th-anniversary",
-      "slug": "baker-mckenzie-50th-anniversary",
+      "slug": "bakermckenzie",
       "title": {
         "en": "Baker McKenzie 50th Anniversary"
       },

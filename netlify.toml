@@ -44,3 +44,100 @@
   for = "/js/*"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Redirects 301 de slugs antiguos de proyecto (renombrados sin guiones).
+[[redirects]]
+  from = "/projects/lords-of-the-fallen.html"
+  to = "/projects/lordsofthefallen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/zibbo.html"
+  to = "/projects/thezibboshow.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/automate-it.html"
+  to = "/projects/automateit.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/a-stranded-spark.html"
+  to = "/projects/astrandedspark.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/luna.html"
+  to = "/projects/lunadelpinal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/for-hemma.html"
+  to = "/projects/forhemma.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/the-same-view-wherever-you-look.html"
+  to = "/projects/thesameviewwhereveryoulook.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/mi-discreto-encanto.html"
+  to = "/projects/midiscretoencanto.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/they-send-word.html"
+  to = "/projects/theysendword.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/c-tangana.html"
+  to = "/projects/ctanganaxbershka.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/mad-lions.html"
+  to = "/projects/madsquad.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/nissan-versa.html"
+  to = "/projects/nissan.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/seat-mad-lions-the-pride.html"
+  to = "/projects/seatxmadlions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/fresca-campana.html"
+  to = "/projects/fresca.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/london-calling-pepe-jeans.html"
+  to = "/projects/pepejeans.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/baker-mckenzie-50th-anniversary.html"
+  to = "/projects/bakermckenzie.html"
+  status = 301
+  force = true
