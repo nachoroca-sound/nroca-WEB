@@ -855,6 +855,12 @@ body.nav-open { overflow: hidden; }
     padding: 1.5rem 1.2rem;
   }
   .footer-credit { text-align: center; }
+  /* Nav prev/next de proyecto: solo "PREVIOUS" / "NEXT", flecha a la misma
+     distancia en ambos lados y mismo gutter lateral que el resto de móvil. */
+  .project-nav { padding: 0 1.2rem; }
+  .project-nav-link { gap: 0.5em; white-space: nowrap; }
+  .project-nav-link svg { margin: 0 !important; } /* pisa el margin inline del SVG */
+  .nav-word-project { display: none; }
   .about-manifesto-section { padding: calc(var(--nav-h) + 3rem) 1.2rem 4rem; }
   .about-bio-section { padding: 0 1.2rem 4rem; }
   .contact-section { padding: calc(var(--nav-h) + 3rem) 1.2rem 4rem; }

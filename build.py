@@ -486,8 +486,8 @@ def build_project_pages():
                     tri_r = '<svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor" aria-hidden="true" style="vertical-align:middle;margin-left:0.5em"><polygon points="0,0 0,10 8,5"/></svg>'
                     project_nav = (
                         f'<nav class="project-nav">'
-                        f'<a class="project-nav-link" href="{prev_url}">{tri_l}Previous Project</a>'
-                        f'<a class="project-nav-link" href="{next_url}">Next Project{tri_r}</a>'
+                        f'<a class="project-nav-link" href="{prev_url}">{tri_l}<span>Previous <span class="nav-word-project">Project</span></span></a>'
+                        f'<a class="project-nav-link" href="{next_url}"><span>Next <span class="nav-word-project">Project</span></span>{tri_r}</a>'
                         f'</nav>'
                     )
                 else:
